@@ -1,0 +1,175 @@
+
+
+:root{
+  --body-color: #E6E6E6;
+--heading1-color: #2b2b2b;
+--heading2-color: #5A5A5A;
+--orange-color:#e38445;
+
+
+}
+@mixin global-margin{
+  margin: 0 8rem;
+}
+@mixin global-flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+body{
+  background-color: var(--body-color);
+  text-transform: capitalize;
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-bar{
+  
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+   
+  
+ 
+  .menu-bar{
+    display: flex;
+    justify-content: space-between;
+  @include global-margin;
+  align-items: center;
+    
+
+    .menu-logo{
+      display: flex;
+      justify-content: center;
+      gap: 0.2rem;
+      align-items: center;
+  
+      h2{
+        margin: 0;
+        padding: 0;
+        color: var(--heading1-color);
+      }
+      .box{
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: var(--orange-color);
+        margin-top: 0.6rem;
+      }
+    }
+  
+    ul{
+      display: flex;
+      justify-content: center;
+      gap: 1.8rem;
+      li{
+        list-style-type: none;
+      }
+      li a{
+       text-decoration: none;
+       color: var(--heading2-color);
+      }
+    }
+  }
+
+}
+
+
+.hero{
+  
+  @include global-margin;
+  @include global-flexbox; 
+  margin-top: 10vh;
+  position: relative;
+  height: 90vh;
+  
+  // background-color: #26E139;
+  
+  .hero-conent{
+    display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0.5rem;
+  
+    .hero-conent-heading{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h2{
+        color: var(--heading1-color);
+        line-height: 1.2;
+        margin: 0;
+        span{
+          color: var(--orange-color);
+        }
+      }
+      h3{
+        margin: 0;
+        color: var(--heading2-color);
+      }
+  
+    }
+   
+    p{
+      
+      color: var(--heading2-color);
+    }
+
+    .hero-conent-button{
+      display: flex ;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      button{
+       background-color: var(--orange-color);
+       border:  none;
+       color: white;
+       border-radius: 0.2rem;
+       padding: 0.5rem 1rem;
+      } 
+    }
+  }
+
+
+  .hero-images{
+    // width: 50%;
+    // position: relative;
+    .img1{
+      position: absolute;
+      top: 3.5rem;
+      width: 17rem;
+      right: 5rem;
+     transition: 1s;
+      &:hover{
+        top: 3.2rem;
+      }
+    
+    }
+
+    .img2{
+      
+      width: 27rem;
+      transition: 1s;
+      &:hover{
+        margin: 1rem;
+      }
+    }
+
+  }
+
+
+
+}
+
+
+
+
+
+
