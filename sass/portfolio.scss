@@ -5,7 +5,7 @@
 --heading1-color: #2b2b2b;
 --heading2-color: #5A5A5A;
 --orange-color:#e38445;
-
+--box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
 
 }
 @mixin global-margin{
@@ -17,7 +17,9 @@
   align-items: center;
 }
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 body{
   background-color: var(--body-color);
@@ -32,11 +34,12 @@ body{
   
   height: 10%;
   width: 100%;
-  background-color: white;
+  // background-color: white;
   position: fixed;
   top: 0;
   z-index: 1;
-   
+   transition: 1s;
+  //  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);;
   
  
   .menu-bar{
@@ -81,6 +84,26 @@ body{
 
 }
 
+#arrow-up-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  
+}
+.arrow-up{
+  display: none;
+  bottom: 2rem;
+  right: 2rem;
+  position: fixed;
+  z-index: 2;
+  
+  
+    img{
+      width: 2.5rem;
+      
+    }
+}
 
 .hero{
   
@@ -133,6 +156,10 @@ body{
        color: white;
        border-radius: 0.2rem;
        padding: 0.5rem 1rem;
+
+       &:hover{
+        cursor: pointer;
+       }
       } 
     }
   }
@@ -141,32 +168,118 @@ body{
   .hero-images{
     // width: 50%;
     // position: relative;
-    .img1{
+    .mypic{
       position: absolute;
       top: 3.5rem;
       width: 17rem;
       right: 5rem;
      transition: 1s;
-      &:hover{
-        top: 3.2rem;
-      }
+      
     
     }
 
-    .img2{
+    .shape{
       
       width: 27rem;
       transition: 1s;
-      &:hover{
-        margin: 1rem;
-      }
+      
     }
 
+    &:hover .mypic{
+      top: 5rem;
+    }
+
+    &:hover .shape{
+      margin: 1rem;
+    }
   }
 
 
 
 }
+
+
+.myskills{
+height: 100vh;
+@include global-flexbox;
+@include global-margin;
+   .myskills-content{
+      
+
+      .myskills-content-innerdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        .myskills-heading{
+          h2{
+           margin: 0;
+           padding: 0;
+            color: var(--heading2-color);
+          }
+           div{
+            width: 7rem;
+            height: 0.1rem;
+            background-color: var(--heading1-color);
+            
+           }
+        }
+        
+        h3{
+          margin: 0;
+          color: var(--heading2-color);
+        }
+        p{
+          margin: 0;
+          color: var(--heading2-color);
+        }
+        
+        #skills-tools-btn{
+          margin-top: 1.5rem;
+            background-color: white;
+            width: 13rem;
+            height: 2.7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 50px;
+          
+            &:hover{
+              cursor: pointer;
+            }
+            #skills-btn{
+              background-color: var(--orange-color);
+              color: white;
+              border: none;
+              font-size: 1.2rem;
+              padding: 0.3rem 1.5rem;
+              margin-left: 0.5rem;
+              border-radius: 50px;
+              font-weight: 600;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+
+            #tools-btn{
+              background-color: white;
+              color: var(--heading1-color);
+              font-weight: 600;
+              border: none;
+              font-size: 1.2rem;
+              padding: 0.3rem 1.5rem;
+              margin-right: 0.5rem;
+              border-radius: 50px;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+        }
+
+      }
+   }
+}
+
 
 
 

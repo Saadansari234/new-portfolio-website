@@ -20,7 +20,8 @@
 
 <body>
 
-    <header class="nav-bar">
+
+    <header class="nav-bar" id="header">
         <div class="menu-bar">
 
             <div class="menu-logo">
@@ -31,6 +32,7 @@
             </div>
 
             <ul>
+
                 <li><a href="">home</a></li>
                 <li><a href="">my skill</a></li>
                 <li><a href="">my work</a></li>
@@ -40,34 +42,75 @@
 
     </header>
 
+    <li id="arrow-up-link"></li>
+    <div class="arrow-up" id="arrow-up">
+        <a href="#arrow-up-link">
+            <img src="images/icons/arrow.svg" alt="#">
+        </a>
+    </div>
+
     <section class="hero">
 
         <div class="hero-conent">
-            
 
-                <div class="hero-conent-heading">
-                    <h2>hey, i am <span>{saad ansari}</span></h2>
-                    <h3>a frontend developer</h3>
-                </div>
-                <p> dedicated to crafting immersive digital experiences. <br>
-                    With a keen eye for design and a love for clean code, <br>
-                    I transform ideas into pixel-perfect realities.
-                </p>
 
-                <div class="hero-conent-button">
-                    <button>hire me</button>
-                    <button>download CV</button>
-                </div>
-            
+            <div class="hero-conent-heading">
+                <h2>hey, i am <span>{saad ansari}</span></h2>
+                <h3>a frontend developer</h3>
+            </div>
+            <p> dedicated to crafting immersive digital experiences. <br>
+                With a keen eye for design and a love for clean code, <br>
+                I transform ideas into pixel-perfect realities.
+            </p>
+
+            <div class="hero-conent-button">
+                <button>hire me</button>
+                <button>download CV</button>
+            </div>
+
         </div>
 
         <div class="hero-images">
-            <img class="img1" src="images/my-pic.png" alt="">
-        <img class="img2" src="images/Ellipse 1.svg" alt="">
-        
+            <img class="mypic" src="images/my-pic.png" alt="">
+            <img class="shape" src="images/Ellipse 1.svg" alt="">
+
 
         </div>
     </section>
+
+
+    <section class="myskills">
+
+        <div class="myskills-content">
+            <div class="myskills-content-innerdiv">
+                <div class="myskills-heading">
+
+                    <h2>my skills</h2>
+                    <div></div>
+                </div>
+                <h3>
+                    what my pragramming <br>
+                    skills included?
+                </h3>
+                <p>I develop simple, intuitive and responsive <br>
+                    user interface that helps users get things <br>
+                    done with less effort and time <br>
+                    with those technologies.
+                </p>
+                <div id="skills-tools-btn" onclick="toggleBackground()">
+                    <button id="skills-btn">skills</button>
+                    <button  id="tools-btn">tools</button>
+                </div>
+            </div>
+        </div>
+        <div class="myskills-images">
+       <div><img src="images/logos/html.svg" alt="#"></div>
+        </div>
+    </section>
+
+
+
+
 
 
 
