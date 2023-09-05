@@ -49,26 +49,73 @@ window.addEventListener('scroll', () => {
 
 let toggleButtonClicked = true;
 
+
 function toggleBackground() {
-    const skillsButton = document.getElementById("skills-btn");
-    const toolsButton = document.getElementById("tools-btn");
+    const skillsBtn = document.getElementById("skills-btn");
+    const toolsBtn = document.getElementById("tools-btn");
+    const skillNames = document.querySelectorAll("skill-name")
+    const toolsNames= document.querySelectorAll("tools-name") 
+    const skillImages= document.querySelectorAll("skill-image")
+    const toolsImages= document.querySelectorAll("tools-image")
+ 
 
     if (toggleButtonClicked) {
         // Switch to the "tools" button background
-        skillsButton.style.backgroundColor = "white";
-        toolsButton.style.backgroundColor = "#e38445"; // Change to your desired color
-        skillsButton.style.color="#2b2b2b"
-        toolsButton.style.color = "white";
+        skillsBtn.style.backgroundColor = "white";
+        toolsBtn.style.backgroundColor = "#e38445"; // Change to your desired color
+        skillsBtn.style.color="#2b2b2b"
+        toolsBtn.style.color = "white";
+        // this is the function to show skills and tools bar
+
+        skillImages.forEach(image => image.style.display = "none");
+            toolsImages.forEach(image => image.style.display = "block");
+            skillNames.forEach(name => name.style.display = "none");
+            toolsNames.forEach(name => name.style.display = "block");
+              
+
     } else {
         // Switch to the "skills" button background
-        skillsButton.style.backgroundColor = ""; // Change to your desired color
-        toolsButton.style.backgroundColor = "";
-        toolsButton.style.color=""
-        skillsButton.style.color=""
+        skillsBtn.style.backgroundColor = ""; // Change to your desired color
+        toolsBtn.style.backgroundColor = "";
+        toolsBtn.style.color=""
+        skillsBtn.style.color=""
+     
+        skillImages.forEach(image => image.style.display = "");
+            toolsImages.forEach(image => image.style.display = "");
+            toolsNames.forEach(name => name.style.display = "");
+            skillNames.forEach(name => name.style.display = "");
+
     }
 
     // Toggle the state
     toggleButtonClicked = !toggleButtonClicked;
+
+
+
 }
 
 
+// skils and tools function
+
+// function SkillTools(){
+   
+//     if (skillsBtn.style.backgroundColor=="#e38445") {
+//          skillimage.style.display= "block";
+//         skillname.style.display="block";
+//     }else{
+//         skillimage.style.display= "none";
+//         skillname.style.display="none";
+//     }
+
+//     if (toolsButton.style.backgroundColor=="#e38445") {
+//         toolsname.style.display= "block";
+//         toolsimage.style.display="block";
+//    }else{
+//     toolsname.style.display= "none";
+//     toolsimage.style.display="none";
+//    }
+
+
+// }
+
+// SkillTools();
