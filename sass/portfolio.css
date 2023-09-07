@@ -1,10 +1,11 @@
 :root {
-  --body-color: #E6E6E6;
-  --bg-color: hsl(0, 0%, 90%);
+  --body-color: hsl(0, 0%, 90%);
+  --bg-color: hsl(0, 0%, 100%);
   --heading1-color: #2b2b2b;
   --heading2-color: #5A5A5A;
   --orange-color:#e38445;
-  --box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.062);
+  --box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.511);
+  --transition: 0.25s ease-in-out;
 }
 
 * {
@@ -61,6 +62,21 @@ body {
 .nav-bar .menu-bar ul li a {
   text-decoration: none;
   color: var(--heading2-color);
+  font-weight: 600;
+  position: relative;
+}
+.nav-bar .menu-bar ul li a .line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--orange-color);
+  transition: width 0.3s ease;
+}
+.nav-bar .menu-bar ul li a:hover .line {
+  width: 100%;
 }
 
 #arrow-up-link {
@@ -186,7 +202,7 @@ body {
 }
 .myskills .myskills-content .myskills-content-innerdiv #skills-tools-btn {
   margin-top: 1.5rem;
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
   width: 13rem;
   height: 2.7rem;
   display: flex;
@@ -200,7 +216,7 @@ body {
 }
 .myskills .myskills-content .myskills-content-innerdiv #skills-tools-btn #skills-btn {
   background-color: var(--orange-color);
-  color: white;
+  color: var(--bg-color);
   border: none;
   font-size: 1.2rem;
   padding: 0.3rem 1.5rem;
@@ -212,7 +228,7 @@ body {
   cursor: pointer;
 }
 .myskills .myskills-content .myskills-content-innerdiv #skills-tools-btn #tools-btn {
-  background-color: white;
+  background-color: var(--bg-color);
   color: var(--heading1-color);
   font-weight: 600;
   border: none;
@@ -220,6 +236,7 @@ body {
   padding: 0.3rem 1.5rem;
   margin-right: 0.5rem;
   border-radius: 50px;
+  transition: 0.3s;
 }
 .myskills .myskills-content .myskills-content-innerdiv #skills-tools-btn #tools-btn:hover {
   cursor: pointer;
@@ -241,7 +258,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0.8rem;
-  border: 1px solid gray;
   box-shadow: var(--box-shadow);
 }
 .myskills .myskillsandtools-images .image-content:hover {
@@ -257,6 +273,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: white;
+  transition: 0.3s;
 }
 .myskills .myskillsandtools-images .image-content .tools-name {
   opacity: 0;
@@ -270,6 +287,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: white;
+  transition: 0.3s;
 }
 .myskills .myskillsandtools-images .image-content div {
   display: flex;

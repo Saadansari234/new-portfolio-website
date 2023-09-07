@@ -1,12 +1,13 @@
 
 
 :root{
-  --body-color: #E6E6E6;
-  --bg-color: hsl(0, 0%, 90%);
+  --body-color: hsl(0, 0%, 90%);
+  --bg-color: hsl(0, 0%, 100%);
 --heading1-color: #2b2b2b;
 --heading2-color: #5A5A5A;
 --orange-color:#e38445;
---box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.062);
+--box-shadow:  0px 0.1rem 0.4rem rgba(0, 0, 0, 0.511); 
+--transition: 0.25s ease-in-out;
 
 }
 @mixin global-margin{
@@ -81,10 +82,28 @@ body{
       gap: 1.8rem;
       li{
         list-style-type: none;
+
+       
       }
       li a{
        text-decoration: none;
        color: var(--heading2-color);
+       font-weight: 600;
+       position: relative;
+
+       .line{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--orange-color);
+        transition: width 0.3s ease;
+       }
+       &:hover .line {
+        width: 100%;
+    }
       }
     }
   }
@@ -244,7 +263,7 @@ height: 100vh;
         
         #skills-tools-btn{
           margin-top: 1.5rem;
-            background-color: whitesmoke;
+            background-color: var(--bg-color);
             width: 13rem;
             height: 2.7rem;
             display: flex;
@@ -257,7 +276,7 @@ height: 100vh;
             }
             #skills-btn{
               background-color: var(--orange-color);
-              color: white;
+              color: var(--bg-color);
               border: none;
               font-size: 1.2rem;
               padding: 0.3rem 1.5rem;
@@ -270,7 +289,7 @@ height: 100vh;
             }
 
             #tools-btn{
-              background-color: white;
+              background-color: var(--bg-color);
               color: var(--heading1-color);
               font-weight: 600;
               border: none;
@@ -278,6 +297,7 @@ height: 100vh;
               padding: 0.3rem 1.5rem;
               margin-right: 0.5rem;
               border-radius: 50px;
+              transition: 0.3s;
               &:hover{
                 cursor: pointer;
               }
@@ -300,9 +320,9 @@ height: 100vh;
       background-color: whitesmoke;
       @include global-flexbox2;
       border-radius: 0.8rem;
-      border: 1px solid gray;
+      // border: 1px solid gray;
       box-shadow: var(--box-shadow);
-
+      
       &:hover{
         cursor:not-allowed;
       }
@@ -318,7 +338,7 @@ height: 100vh;
       font-size: 1rem;
       font-weight: 600;
       color: white;
-
+      transition: 0.3s;
       
       
       }
@@ -334,21 +354,23 @@ height: 100vh;
        font-size: 1rem;
        font-weight: 600;
        color: white;
+       transition: 0.3s;
       }
      
      div{
       @include global-flexbox2;
-
+      
       
 
        .skill-image{
          width: 50px;
-        //  display: block;  
+        //  display: block; 
+         
        }
        .tools-image{
         width: 50px;
         display: none;
-
+      
       }
       } 
 

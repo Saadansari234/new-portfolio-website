@@ -3,10 +3,11 @@ const header = document.getElementById("header");
 let arrowup= document.getElementById("arrow-up");
 window.addEventListener('scroll', () => {
     if (window.scrollY > 150) { // Adjust this value as needed
-        header.style.backgroundColor = "white"; // Change to the desired color
-        header.style.boxShadow= "10px 10px 40px black; "
+        header.style.backgroundColor = "hsl(0, 0%, 100%)"; // Change to the desired color
+        header.style.boxShadow= "0px 0.1rem 0.4rem rgba(0, 0, 0, 0.511) "
     } else {
         header.style.backgroundColor = 'transparent'; // Reset to the initial color
+        header.style.boxShadow= ""
     }
 
     
@@ -37,7 +38,7 @@ function toggleBackground() {
 
     if (toggleButtonClicked) {
         // Switch to the "tools" button background
-        skillsBtn.style.backgroundColor = "white";
+        skillsBtn.style.backgroundColor = "hsl(0, 0%, 100%)";
         toolsBtn.style.backgroundColor = "#e38445"; // Change to your desired color
         skillsBtn.style.color="#2b2b2b"
         toolsBtn.style.color = "white";
