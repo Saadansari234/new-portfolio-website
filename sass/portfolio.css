@@ -87,11 +87,12 @@ body {
 }
 
 .arrow-up {
-  display: none;
+  opacity: 0;
   bottom: 2rem;
   right: 2rem;
   position: fixed;
   z-index: 2;
+  transition: 1s;
 }
 .arrow-up img {
   width: 2.5rem;
@@ -143,6 +144,7 @@ body {
   color: white;
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
+  font-weight: 600;
 }
 .hero .hero-conent .hero-conent-button button:hover {
   cursor: pointer;
@@ -307,4 +309,9 @@ body {
 .myskills .myskillsandtools-images .image-content:hover .tools-name {
   opacity: 1;
   display: none;
+}
+
+.mywork {
+  height: 100vh;
+  margin: 0 8rem;
 }/*# sourceMappingURL=portfolio.css.map */

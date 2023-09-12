@@ -12,8 +12,10 @@ window.addEventListener('scroll', () => {
 
     
 
-    if (window.scrollY > 400) {
-        arrowup.style.display="block"
+    if (window.scrollY > 500) {
+        arrowup.style.opacity= "1"
+    }else{
+        arrowup.style.opacity= "0"
     }
 
     
