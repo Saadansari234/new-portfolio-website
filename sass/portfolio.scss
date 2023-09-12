@@ -27,6 +27,7 @@
 
 *{
   scroll-behavior: smooth;
+
 }
 
 body{
@@ -397,6 +398,53 @@ height: 100vh;
   // width: 100%;
   height: 100vh;
   @include global-margin;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2rem;
+
+  .mywork-outerdiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+
+    .mywork-content{
+      position: relative;
+      width: 18rem;
+      overflow: hidden;
+  
+      .mywork-imag{
+         width: 18rem;
+         height: 12rem;
+         margin: 0;
+         padding: 0;
+         
+      }
+  
+      .mywork-text-content{
+        position: absolute;
+        width: 18rem;
+        height: 12rem;
+        z-index: 5;
+        bottom: -100%;
+        background-color: #e38445a8;
+        transition: 0.5s;
+        margin: 0;
+        padding: 0;
+       
+      }
+  
+      &:hover .mywork-text-content{
+        bottom: 0.4rem;
+      }
+  }
+  }
+  
+  
+  
+  
 }
 
 

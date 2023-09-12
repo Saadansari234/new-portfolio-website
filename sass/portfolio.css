@@ -314,4 +314,40 @@ body {
 .mywork {
   height: 100vh;
   margin: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.mywork .mywork-outerdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+.mywork .mywork-outerdiv .mywork-content {
+  position: relative;
+  width: 18rem;
+  overflow: hidden;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-imag {
+  width: 18rem;
+  height: 12rem;
+  margin: 0;
+  padding: 0;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-text-content {
+  position: absolute;
+  width: 18rem;
+  height: 12rem;
+  z-index: 5;
+  bottom: -100%;
+  background-color: rgba(227, 132, 69, 0.6588235294);
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+}
+.mywork .mywork-outerdiv .mywork-content:hover .mywork-text-content {
+  bottom: 0.4rem;
 }/*# sourceMappingURL=portfolio.css.map */
