@@ -3,7 +3,7 @@
   --bg-color: hsl(0, 0%, 100%);
   --heading1-color: #2b2b2b;
   --heading2-color: #5A5A5A;
-  --orange-color:#e38445;
+  --orange-color: #e38445;
   --box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.511);
   --transition: 0.25s ease-in-out;
 }
@@ -312,30 +312,40 @@ body {
 }
 
 .mywork {
-  height: 100vh;
+  height: 90vh;
   margin: 0 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }
+.mywork h1 {
+  color: var(--heading1-color);
+  font-size: 2rem;
+}
 .mywork .mywork-outerdiv {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
+  color: white;
 }
 .mywork .mywork-outerdiv .mywork-content {
   position: relative;
   width: 18rem;
   overflow: hidden;
+  height: 12rem;
+  background-color: rgba(43, 43, 43, 0.7882352941);
+  border-radius: 1rem;
 }
 .mywork .mywork-outerdiv .mywork-content .mywork-imag {
   width: 18rem;
   height: 12rem;
   margin: 0;
   padding: 0;
+  opacity: 0.4;
 }
 .mywork .mywork-outerdiv .mywork-content .mywork-text-content {
   position: absolute;
@@ -343,11 +353,39 @@ body {
   height: 12rem;
   z-index: 5;
   bottom: -100%;
-  background-color: rgba(227, 132, 69, 0.6588235294);
+  background: linear-gradient(to right, rgba(102, 98, 73, 0.4941176471), rgba(255, 166, 0, 0.631372549));
   transition: 0.5s;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-text-content .mywork-description {
+  font-size: 0.8rem;
+  width: 80%;
+  text-align: center;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-text-content .mywork-links {
+  display: flex;
+  gap: 2rem;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-text-content .mywork-links .mywork-link1-img {
+  background-color: white;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 1rem;
+  padding: 0.8rem;
+}
+.mywork .mywork-outerdiv .mywork-content .mywork-text-content .mywork-links .mywork-link2-img {
+  background-color: white;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 1rem;
+  padding: 0.8rem;
 }
 .mywork .mywork-outerdiv .mywork-content:hover .mywork-text-content {
-  bottom: 0.4rem;
+  bottom: 0;
 }/*# sourceMappingURL=portfolio.css.map */

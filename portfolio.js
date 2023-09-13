@@ -98,23 +98,60 @@ function myworkObject(innerimg,title,description,link1,link2,link1img,link2img){
   return mywork_array.push(myWork)
 }
 
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
+function myworkObjectfunction(){
 
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
+    myworkObject("images/myskillspic/pic1.jpg",
+    "calculator",
+    "A calculator using html,css and javascript to showcase my skills",
+    "#",
+    "#",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
+    
+    myworkObject("images/myskillspic/pic6.jpg",
+    "e-commerce website",
+    "An e-commerce website where i have showcases how add to cart activity works",
+    "https://saadansari234.github.io/ecommerce1/",
+    "https://github.com/Saadansari234/ecommerce1.git",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
+    
+    myworkObject("images/myskillspic/pic2.jpg",
+    "quiz game",
+    "a quiz game using html,css,javascript and used object oreinted prgram to showcases the output",
+    "https://saadansari234.github.io/quizgame.github.io/",
+    "https://github.com/Saadansari234/quizgame.github.io.git",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
+    
+    myworkObject("images/myskillspic/pic3.jpg",
+    "number game",
+    "a number where i have use logical thinking work to enhance my javascript skills",
+    "https://saadansari234.github.io/numbergame.github.io/",
+    "https://github.com/Saadansari234/numbergame.github.io.git",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
+    
+    myworkObject("images/myskillspic/pic4.jpg",
+    "color generator",
+    "a color generate website is an awsome website to pick multiple color in hexadecimals",
+    "#",
+    "#",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
+    
+    myworkObject("images/myskillspic/pic5.jpg",
+    "portfolio website",
+    "A portfolio website showcases my work, achievements, and skills to potential clients or employers.",
+    "#",
+    "https://github.com/Saadansari234/new-portfolio-website.git",
+    "images/icons/link1.svg",
+    "images/icons/link2.svg")
 
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
+}
 
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
+myworkObjectfunction()
 
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
-
-myworkObject("images/myskillspic/pic1.jpg","new project",
-"Numquam facere consectetur nobis debitis, velit voluptatem eaque a","#","#","images/icons/link1.svg","images/icons/link2.svg")
 
 for(let i=0; i<mywork_array.length;i++){
   
@@ -154,6 +191,7 @@ newMyWorkLinks.classList.add("mywork-links");
 const newMyWorkLink1 = document.createElement("a");
 newMyWorkLink1.classList.add("mywork-link1");
 newMyWorkLink1.href = mywork_array[i].link1;
+newMyWorkLink1.target="_blank"
 
 const newMyWorkLink1Img = document.createElement("img");
 newMyWorkLink1Img.classList.add("mywork-link1-img");
@@ -163,6 +201,7 @@ newMyWorkLink1Img.alt = "Link 1 Image";
 const newMyWorkLink2 = document.createElement("a");
 newMyWorkLink2.classList.add("mywork-link2");
 newMyWorkLink2.href = mywork_array[i].link2;
+newMyWorkLink2.target="_blank"
 
 const newMyWorkLink2Img = document.createElement("img");
 newMyWorkLink2Img.classList.add("mywork-link2-img");
