@@ -176,6 +176,17 @@ body {
 
     }
 
+    .hero-conent-socials{
+      a{
+
+          img{
+
+            width: 1.5rem;
+            height:1.5rem;
+          }
+      }
+    }
+
     p {
 
       color: var(--heading2-color);
@@ -241,6 +252,7 @@ body {
   height: 100vh;
   @include global-flexbox;
   @include global-margin;
+
 
   .myskills-content {
     width: 50%;
@@ -421,15 +433,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+
 
   h1 {
     color: var(--heading1-color);
     font-size: 2rem;
+    margin-top: 5rem;
   }
 
   .mywork-outerdiv {
-    margin-top: 1rem;
+    // margin-top: 5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -458,7 +471,7 @@ body {
         position: absolute;
         width: 18rem;
         height: 12rem;
-        z-index: 5;
+        z-index: 0;
         bottom: -100%;
         background: linear-gradient(to right, #6662497e, #ffa600a1);
         ;
@@ -507,5 +520,11 @@ body {
 
 
 
+
+}
+
+.contact-us {
+  height: 90vh;
+  
 
 }

@@ -130,6 +130,10 @@ body {
   margin: 0;
   color: var(--heading2-color);
 }
+.hero .hero-conent .hero-conent-socials a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .hero .hero-conent p {
   color: var(--heading2-color);
 }
@@ -317,14 +321,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
 }
 .mywork h1 {
   color: var(--heading1-color);
   font-size: 2rem;
+  margin-top: 5rem;
 }
 .mywork .mywork-outerdiv {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -351,7 +354,7 @@ body {
   position: absolute;
   width: 18rem;
   height: 12rem;
-  z-index: 5;
+  z-index: 0;
   bottom: -100%;
   background: linear-gradient(to right, rgba(102, 98, 73, 0.4941176471), rgba(255, 166, 0, 0.631372549));
   transition: 0.5s;
@@ -388,4 +391,8 @@ body {
 }
 .mywork .mywork-outerdiv .mywork-content:hover .mywork-text-content {
   bottom: 0;
+}
+
+.contact-us {
+  height: 90vh;
 }/*# sourceMappingURL=portfolio.css.map */
