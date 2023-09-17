@@ -22,7 +22,15 @@ window.addEventListener('scroll', () => {
 
 });
 
-
+//onclick menu icon
+let mobileMenu= document.getElementById("mobile-menu")
+let myMenu= document.querySelectorAll(".mymenu")
+function menuicon(){
+    mobileMenu.style.display="flex"
+}
+function mymenu(){
+    mobileMenu.style.display="none"
+}
 
 //onclick event listener
 
