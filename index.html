@@ -94,10 +94,10 @@
         </div>
 
         <div class="hero-images">
-            <img class="mypic" src="images/my-pic.png" alt="">
-            <img class="shape" src="images/Ellipse 1.svg" alt="">
-
-
+            <!-- <img class="mypic" src="images/my-pic.png" alt="">
+            <img class="shape" src="images/Ellipse 1.svg" alt=""> -->
+           <img class="my-pic" src="https://codingstella.github.io/jack-portfolio/assets/images/hero-banner.png" alt="a man img">
+           <img class="resp_mypic" src="images/icons/mypic_responsive.svg" alt="#">
         </div>
     </section>
 
@@ -235,28 +235,34 @@
                 </div>
             </div>
             <!-- <div class="contactus-form"> -->
-             <form action="" class="contactus-form">
+             <form class="contactus-form"
+             action="https://formspree.io/f/xjvqpdgr"
+  method="POST">
                 <div>
                     <label for="name">name:</label>
-                    <input type="text" name="name" id="name" placeholder="e.g saad ansari" required>
+                    <input type="text" name="username" id="name" placeholder="e.g saad ansari" 
+                    required autocomplete="off" spellcheck="false">
 
                 </div>
                 <div>
 
                     <label for="email">email:</label>
-                    <input type="text" name="name" id="name" placeholder="e.g saadansari3212@gmail.com" required>
+                    <input type="email" name="email" id="name" placeholder="e.g saadansari3212@gmail.com" 
+                    required autocomplete="off" spellcheck="false">
                 </div>
                 <div>
 
                     <label for="phone">phone:</label>
-                    <input type="text" name="name" id="name" placeholder="e.g (+91) 99670 82695" required>
+                    <input type="text" name="userContact" id="name" placeholder="e.g (+91) 99670 82695" required
+                    autocomplete="off" spellcheck="false" minlength="10">
                 </div>
                 <div>
 
                     <label for="message">message:</label>
-                    <textarea name="message" id="meassage" required placeholder="wite message..." cols="20" rows="5"></textarea>
+                    <textarea name="message" id="meassage" required placeholder="wite message..." cols="20" 
+                    rows="5" autocomplete="off" minlength="5" spellcheck="false"></textarea>
                 </div>
-                <button>SEND</button>
+                <button type="submit">SEND</button>
              </form>
             <!-- </div> -->
         </div>

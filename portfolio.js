@@ -81,8 +81,6 @@ function toggleBackground() {
     toggleButtonClicked = !toggleButtonClicked;
 
 
-
-
 }
 
 
@@ -163,16 +161,6 @@ myworkObjectfunction()
 
 for(let i=0; i<mywork_array.length;i++){
   
-    // mywork_imag.src= mywork_array[i].innerimg;
-    // mywork_title.innerHTML= mywork_array[i].title;
-    // mywork_description.innerHTML= mywork_array[i].description;
-    // mywork_link1_img.src=mywork_array[i].link1img;
-    // mywork_link2_img.src=mywork_array[i].link2img;
-  
-  
-//   mywork_content.innerHTML= innerdiv();
-
-// Create a new "mywork-content" div for each item
 const newMyWorkContent = document.createElement("div");
 newMyWorkContent.classList.add("mywork-content");
 
