@@ -109,8 +109,8 @@ function myworkObjectfunction(){
     myworkObject("images/myskillspic/pic1.jpg",
     "calculator",
     "A calculator using html,css and javascript to showcase my skills",
-    "#",
-    "#",
+    "https://saadansari234.github.io/calculator/",
+    "https://github.com/Saadansari234/calculator",
     "images/icons/link1.svg",
     "images/icons/link2.svg")
     
@@ -141,16 +141,16 @@ function myworkObjectfunction(){
     myworkObject("images/myskillspic/pic4.jpg",
     "color generator",
     "a color generate website is an awsome website to pick multiple color in hexadecimals",
-    "#",
-    "#",
+    " https://saadansari234.github.io/color-changer/",
+    "https://github.com/Saadansari234/color-changer",
     "images/icons/link1.svg",
     "images/icons/link2.svg")
     
     myworkObject("images/myskillspic/pic5.jpg",
-    "portfolio website",
-    "A portfolio website showcases my work, achievements, and skills to potential clients or employers.",
-    "#",
-    "https://github.com/Saadansari234/new-portfolio-website.git",
+    "password-validation",
+    "A passwordvalidation form by html,css and javascript.",
+    " https://saadansari234.github.io/password-validation/",
+    "https://github.com/Saadansari234/password-validation",
     "images/icons/link1.svg",
     "images/icons/link2.svg")
 

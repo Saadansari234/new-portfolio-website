@@ -970,7 +970,8 @@ body {
           width: 18rem;
           height: 12rem;
           z-index: 0;
-          bottom: -100%;
+          // bottom: -100%;
+         top: 0;
           background: linear-gradient(to right, #6662497e, #ffa600a1);
           ;
           transition: 0.5s;
@@ -1303,6 +1304,7 @@ body {
               h3 {
                 @include margin-padding-reset;
                 font-weight: 300;
+                font-size: 1rem;
               }
             }
   
